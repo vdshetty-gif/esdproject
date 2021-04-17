@@ -1,0 +1,115 @@
+#navbar{
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+}
+
+#navbar::before{
+  content: "";
+  background-color: black;
+  position: absolute;
+  top:0px;
+  left:0px;
+  height: 100%;
+  width:100%;
+  z-index: -1;
+  opacity: 0.7;
+}
+#navbar ul{
+  display: flex;
+  font-family: 'Baloo Bhai', cursive;
+}
+
+#navbar ul li{ 
+  list-style: none;
+  font-size: 1rem;
+}
+
+#navbar ul li a{
+  color: white;
+  display: block;
+  padding: 3px 22px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+#navbar ul li a:hover{
+  color: black;
+  background-color: white;
+}
+#navbar ul li a:click{
+  color: black;
+  background-color: white;
+}
+
+.signup-header {
+    width: 30%;
+    margin: 100px auto 0px;
+    color: white;
+    background:green;
+    text-align: center;
+    border: 1px solid green;
+    padding: 10px
+  }
+  
+  form, .content {
+    width: 30%;
+    margin: 0px auto;
+    padding: 20px;
+    border: 1px solid red;
+    background: white;
+    font-size:16px;
+    height:50%
+   
+  }
+  .signup-group {
+    margin: 0px 0px 10px 0px;
+   
+  }
+  .signup-group label {
+    text-align: left;
+    
+  }
+  .signup-group input {
+    height: 25px;
+    width: 93%;
+    padding: 5px 10px;
+    border: 1px solid gray;
+    font-size:14px;
+  }
+
+  .signup-btn {
+    padding: 5px;
+    font-size: 15px;
+    color: white;
+    background:brown;
+    float:left
+  }
+  .btn {
+  
+    padding: 10px 10px;
+  
+    font-size: 15px;
+    color: white;
+    background:red;
+    display: in-line block
+  }
+  .body{
+    height: 100vh;
+    background-size:cover;
+    background-image:url("../img/bgimg.jfif");
+  }
+
+  footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+    text-align: center;
+}
+#logo {
+  margin: 1px 0.1px;
+  height: 2px;
+  width:0.5px;
+  margin-left: 12px;
+}

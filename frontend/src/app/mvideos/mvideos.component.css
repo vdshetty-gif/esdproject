@@ -1,0 +1,78 @@
+iframe {
+    background-color: lightgrey;
+    width: 370px;
+    height: 330px;
+    border: 10px solid purple;
+    padding: 0px;
+    margin: 50px;
+    flex-direction: row;
+    float: left;}
+
+  body{
+       background-color:green;
+        height: 100vh;
+        background-size:cover;
+      
+  }
+  #logo{
+    margin: 1px 0.1px;
+    height: 22px;
+    width:35px;
+    margin-left: 12px;
+  }
+  marquee {
+    color: white;
+    
+}
+
+
+  #navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+  }
+  
+  #navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+  }
+  #navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai', cursive;
+  }
+  
+  #navbar ul li{ 
+    list-style: none;
+    font-size: 1rem;
+  }
+  
+  #navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+  }
+  
+  #navbar ul li a:hover{
+    color: black;
+    background-color: white;
+  }
+  #navbar ul li a:click{
+    color: black;
+    background-color: white;
+  }
+  footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+    text-align: center;
+}

@@ -1,0 +1,56 @@
+<!--<div class="row" style="margin-top:40px; background-color:#eff0f2;
+-webkit-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.2);
+-moz-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.2);
+box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.2);">
+   <div class="col-sm-12" style="text-align:center;">
+    Register
+  </div> 
+
+  <div class="col-sm-12">
+      <div class="jumbotron">
+          <h1 class="display-4">Hello, {{username}}!</h1>
+          <p class="lead">You have successfully logged in to our system.</p>
+          <hr class="my-4">
+          <p>Thanks to bootstrap for making wonderful UI to make development fast.</p>
+          <p class="lead" style="color:white;">
+            <a class="btn btn-primary btn-lg" role="button" (click)="logout()">Log Out</a>
+          </p>
+          <p><a class="btn btn-primary btn-sm" role="button" (click)="avideos()">Testing </a></p>
+<p><a class="btn btn-primary btn-sm" role="button" (click)="marticles()">Testing </a></p>
+        </div>
+  </div>
+</div>-->
+<div clas="body">
+<nav id="navbar">
+ 
+  <ul>
+    <a class="navbar-brand" href="#">ESD PROJECT</a>
+      <li class="item"><a [routerLink]="['/homepage']" routerLinkActive="active">LOGOUT</a></li>  
+  </ul>
+</nav>
+<div id="services">
+  <div class="box">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThrOhqrCh_NKd0fmEiW0aSYg4n6_9dy9trAw&usqp=CAU" alt="Microwave">
+      <h2 class="h-secondary center">Videos</h2>
+      <p class="center">Microwave engineering pertains to the study and design of microwave circuits, components, and systems. Fundamental principles are applied to analysis, design and measurement techniques in this field.
+         The short wavelengths involved distinguish this discipline from Electronic engineering. Click below to watch the videos related to the domain <br> <a class="btn btn-primary btn-lg" role="button" (click)="mvideos()">Videos </a></p>
+  </div>
+  <div class="box">
+      <img src="https://thumbs.dreamstime.com/b/radio-antenna-11452170.jpg" alt="Antenna">
+      
+      <h2 class="h-secondary center">Articles </h2>
+      <p class="center">In radio engineering, an antenna is the interface between radio waves propagating through space and electric currents moving in metal conductors, used with a transmitter or receiver.In transmission, a radio transmitter supplies an electric current to the antenna's terminals, and the antenna radiates the energy from the current as electromagnetic waves (radio waves)
+        <br> Click Below to read the articles related to the domain 
+  <br>
+  <a class="btn btn-primary btn-lg" role="button" (click)="articles()">Articles </a> </p>
+  </div>
+  <footer style="position: fixed;bottom: 0;left: 0;width: 100%;">
+    
+    <div class="footer"> &copy; 2020 Copyright @
+    <a href="index.html" style="color:white" > ESD Project </a>
+    </div> </footer> <footer style="position: fixed;bottom: 0;left: 0;width: 100%;">
+    
+      <div class="footer"> &copy; 2020 Copyright @
+      <a href="index.html" style="color:white" > ESD Project </a>
+      </div> </footer>
+    </div>

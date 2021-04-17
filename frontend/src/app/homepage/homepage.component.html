@@ -1,0 +1,97 @@
+<nav id="navbar">
+    <div id="logo">
+        <img src="https://image.shutterstock.com/image-vector/esd-letter-logo-design-vector-260nw-1821146696.jpg" alt="logo">
+    </div>
+    <ul>
+      <a class="navbar-brand" href="#">ESD PROJECT</a>
+      <li class="item"><a [routerLink]="['/login']" routerLinkActive="active">LOGIN</a></li>
+        <li class="item"><a [routerLink]="['/register']" routerLinkActive="active">REGISTER</a></li>
+        
+    </ul>
+  </nav>
+   <body class="tm-bg-dark">
+    
+    <main class="tm-container masonry">
+        <div class="item tm-bg-white tm-block tm-block-left" data-desktop-seq-no="1" data-mobile-seq-no="1">
+            <p class="tm-hero-text">&ldquo;If nothing was learned, nothing was taught. If they want your opinion, they'll ask you to fill out the necessary forms. Confession is good for the soul, but bad for your career&rdquo;</p>
+            <header class="tm-block-brand">
+                <div class="tm-bg-primary-dark tm-text-white tm-block-brand-inner">
+                    <i class="fas fa-braille fa-3x"></i>
+                    <h1 class="tm-brand-name">ESD Semester 6 Project</h1>
+                </div>
+            </header>
+        </div>
+        <div class="item" data-desktop-seq-no="2" data-mobile-seq-no="4">
+            <img src="https://media.discordapp.net/attachments/830858083550363689/831948183822794842/IMG-20210414-WA0043.jpg?width=514&height=612" alt="Image" class="tm-img-left">
+        </div>
+        <div class="item tm-bg-secondary tm-text-white tm-block tm-block-wider tm-block-pad tm-block-left-2" data-desktop-seq-no="3"
+            data-mobile-seq-no="5">
+            <i class="fas fa-award fa-4x tm-block-icon"></i>
+            <p>As an engineer, we are expected to know stuffs. The knowledge of the history of trend is as important as knowledge of the current trend. To know read current articles and recent developments...</p>
+            <div class="tm-text-right">
+                <a href="https://mtt.org/" class="tm-btn tm-btn-small tm-btn-primary tm-mt">Click here</a>
+            </div>
+        </div>
+        <div class="item" data-desktop-seq-no="4" data-mobile-seq-no="8">
+            <img src="https://media.discordapp.net/attachments/830858083550363689/831948952688656405/IMG-20210414-WA0046.jpg?width=470&height=612" alt="Image" class="tm-img-left">
+        </div>
+
+                <p>Designed by <a rel="nofollow" href="https://www.instagram.com/ieee.mtts.tcet/">E&TC-TE-B-11,12,13,14,15</a></p>
+            
+
+        <div class="item" data-desktop-seq-no="6" data-mobile-seq-no="2">
+            <img src="https://media.discordapp.net/attachments/830858083550363689/831947215173582857/IMG-20210414-WA0044.jpg" alt="Image">
+        </div>
+        <div class="item tm-block-right" data-desktop-seq-no="7" data-mobile-seq-no="3">
+            <div class="tm-block-right-inner tm-bg-primary-light tm-text-white tm-block tm-block-wider tm-block-pad">
+                <header>
+                    <h2 class="tm-text-uppercase">
+                        Microwaves and Antennas
+                    </h2>
+                </header>
+                <p>Microwave is a line-of-sight wireless communication technology that uses high frequency beams of radio waves to provide high speed wireless connections that can send and receive voice, video, and data information.<a href="https://en.wikipedia.org/wiki/Microwave_transmission"> Read more</a></p>
+                <p class="tm-mt tm-mb-small">an antenna is an interface between radio waves propagating through space and electric currents moving in metal conductors, used with a transmitter or receiver. <a href="https://en.wikipedia.org/wiki/Antenna_(radio)"> Read more</a></p>
+
+            </div>
+        </div>
+
+        <div class="item" data-desktop-seq-no="8" data-mobile-seq-no="6">
+            <img src="https://media.discordapp.net/attachments/830858083550363689/831948363808243712/IMG-20210414-WA0045.jpg?width=493&height=613" alt="Image">
+        </div>
+
+        <div class="item tm-bg-white tm-block tm-form-section" data-desktop-seq-no="9" data-mobile-seq-no="7">
+            <div class="tm-form-container tm-block-pad tm-pb-0">
+                <header>
+                    <h2 class="tm-text-uppercase tm-text-gray-light tm-mb">
+                        Contact Us
+                    </h2>
+                </header>
+                <form [formGroup]="contactForm" class="tm-contact-form" >
+                    <div class="tm-form-group">
+                        <input formControlName="name" type="text" id="contact_name" name="contact_name" class="form-control" aria-describedby="userHelp" placeholder="Name" required/>
+                    </div>
+                    <div class="tm-form-group">
+                        <input formControlName="email" type="email" id="contact_email" name="contact_email" class="form-control" aria-describedby="emailHelp"  placeholder="Email" required/>
+                    </div>
+                    <div class="tm-form-group">
+                        <textarea rows="5" formControlName="text" type="text" id="contact_message" name="contact_message" class="form-control" placeholder="Message" required></textarea>
+                    </div>
+                    <div class="tm-text-right">
+                        <button type="submit" class="tm-btn tm-btn-secondary tm-btn-pad-big" (click)="movetocontact()">Send</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="tm-form-section-tag">
+                <div class="tm-bg-secondary tm-text-white tm-block-pad tm-form-section-tag-inner">
+                    <header>
+                        <h2>Feedback</h2>
+                    </header>
+                    <p>Thank you for providing us with the extensive learning program under ESD 
+                        </p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
